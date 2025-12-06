@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-decor">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+    </div>
+
+    <div class="card">
+        <div class="header">
+            <div class="search">
+                <input type="text" id="cityInput" placeholder="Search City..." spellcheck="false">
+                <button id="searchBtn"><img src="https://cdn-icons-png.flaticon.com/512/10905/10905219.png" alt="search"></button>
+            </div>
+            <div class="date-time">
+                <p id="date">Mon, 6 Dec</p>
+                <p id="time">10:30 AM</p>
+            </div>
+        </div>
+
+        <div class="loader" style="display: none;"></div>
+        <div class="error" style="display: none;"><p>Invalid city name</p></div>
+
+        <div class="weather" style="display: none;">
+            <div class="main-info">
+                <img src="https://cdn-icons-png.flaticon.com/512/1146/1146869.png" class="weather-icon">
+                <div>
+                    <h1 class="temp">22°C</h1>
+                    <h2 class="city">New York</h2>
+                    <p class="description">Broken Clouds</p>
+                </div>
+            </div>
+
+            <div class="details-grid">
+                <div class="grid-item">
+                    <p class="label">Humidity</p>
+                    <p class="value humidity">50%</p>
+                </div>
+                <div class="grid-item">
+                    <p class="label">Wind Speed</p>
+                    <p class="value wind">15 km/h</p>
+                </div>
+                <div class="grid-item">
+                    <p class="label">Feels Like</p>
+                    <p class="value feels-like">24°C</p>
+                </div>
+                <div class="grid-item">
+                    <p class="label">Pressure</p>
+                    <p class="value pressure">1012 hPa</p>
+                </div>
+                <div class="grid-item">
+                    <p class="label">Sunrise</p>
+                    <p class="value sunrise">6:00 AM</p>
+                </div>
+                <div class="grid-item">
+                    <p class="label">Sunset</p>
+                    <p class="value sunset">6:30 PM</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
